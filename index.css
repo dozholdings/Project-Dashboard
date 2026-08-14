@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  background: #191621;
+  min-height: 100%;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Stops iOS Safari zooming in when you tap a text field */
+input, textarea, select { font-size: 16px; }
+
+/* No rubber-band overscroll flash of white behind the app */
+body { overscroll-behavior-y: none; }
+
+/* Keeps taps from flashing a grey box on iOS */
+button, a, [role="button"] { -webkit-tap-highlight-color: transparent; }
